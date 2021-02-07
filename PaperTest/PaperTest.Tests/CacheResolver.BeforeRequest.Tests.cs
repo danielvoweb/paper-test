@@ -18,7 +18,7 @@ namespace PaperTest.Tests
             var expectedEndpoint = new PaperEndpoint
             {
                 Method = HttpMethod.Get,
-                StatusCode = HttpStatusCode.Accepted,
+                StatusCode = HttpStatusCode.OK,
                 TimeToLive = DateTime.Now.AddSeconds(30)
             };
 

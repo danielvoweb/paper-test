@@ -4,11 +4,11 @@
         <TargetFramework>net5.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>Daniel Vo</Title>
-        <Description>Integration testing tool for utilizing self-initializing fakes in API discovery.</Description>
+        <Description>The C# integration testing library for self-initializing fakes with MongoDB.</Description>
         <Copyright>2020</Copyright>
         <RepositoryUrl>https://github.com/danielvoweb/paper-test</RepositoryUrl>
-        <PackageVersion>1.0.4-alpha</PackageVersion>
-        <PackageTags>fakes;testing;</PackageTags>
+        <PackageVersion>1.0.5</PackageVersion>
+        <PackageTags>fakes;testing;mongodb;integration testing</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
@@ -38,7 +38,7 @@
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)"/>
+        <None Include="..\..\LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
     </ItemGroup>
 
 </Project>

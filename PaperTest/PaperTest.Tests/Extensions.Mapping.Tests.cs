@@ -26,7 +26,7 @@ namespace PaperTest.Tests
                     RequestUri = new Uri("http://example.com"),
                     Method = HttpMethod.Get
                 },
-                StatusCode = HttpStatusCode.Accepted,
+                StatusCode = HttpStatusCode.OK,
                 ReasonPhrase = "OK",
                 Content = new StringContent(EXPECTED_CONTENT)
             };
@@ -79,7 +79,7 @@ namespace PaperTest.Tests
             {
                 Endpoint = new Uri("http://example.com"),
                 Method = HttpMethod.Get,
-                StatusCode = HttpStatusCode.Accepted,
+                StatusCode = HttpStatusCode.OK,
                 ReasonPhase = "OK",
                 Headers = JsonConvert.SerializeObject(response.Headers),
                 TrailingHeaders = JsonConvert.SerializeObject(response.TrailingHeaders),
@@ -123,7 +123,7 @@ namespace PaperTest.Tests
             {
                 Endpoint = new Uri("http://example.com"),
                 Method = HttpMethod.Get,
-                StatusCode = HttpStatusCode.Accepted,
+                StatusCode = HttpStatusCode.OK,
                 ReasonPhase = "OK",
                 Headers = JsonConvert.SerializeObject(response.Headers),
                 Content = EXPECTED_CONTENT
@@ -158,7 +158,7 @@ namespace PaperTest.Tests
             {
                 Endpoint = new Uri("http://example.com"),
                 Method = HttpMethod.Get,
-                StatusCode = HttpStatusCode.Accepted
+                StatusCode = HttpStatusCode.OK
             };
 
             // Act
@@ -170,7 +170,7 @@ namespace PaperTest.Tests
                 actual.RequestMessage?.RequestUri.Should().Be(expected.Endpoint);
                 actual.RequestMessage?.Method.Should().Be(expected.Method);
                 actual.StatusCode.Should().Be(expected.StatusCode);
-                actual.ReasonPhrase.Should().Be("Accepted");
+                actual.ReasonPhrase.Should().Be("OK");
                 actual.Headers.Should().BeEmpty();
                 actual.TrailingHeaders.Should().BeEmpty();
 
